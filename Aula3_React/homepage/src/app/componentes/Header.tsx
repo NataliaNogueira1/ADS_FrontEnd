@@ -1,3 +1,4 @@
+"use client";
 import Button from "@/app/componentes/ui/Button";
 
 export default function Header() {
@@ -14,7 +15,13 @@ export default function Header() {
         <p className="cursor-pointer">Onde estamos</p>
         <p className="cursor-pointer">Contato</p>
       </div>
-      <Button />
+      <Button
+        name="Login"
+        style="dark"
+        click={() => {
+          alert("Login feito com sucesso!");
+        }}
+      />
     </div>
   );
 }
